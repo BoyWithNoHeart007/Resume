@@ -1,0 +1,44 @@
+package com.example.resume;
+
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.resume.homeactivity;
+
+public class BaseActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+
+    @Override
+    public void onBackPressed() {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Do you want to exit back in main page??");
+        builder.setTitle("Alert !");
+        builder.setCancelable(false);
+
+        AlertDialog.Builder builder1 = builder.setPositiveButton("Yes",(DialogInterface.OnClickListener) (dialog, which) ->{
+            finish();
+        });
+        builder.setNegativeButton("NO",(DialogInterface.OnClickListener)(dialog, which) ->{
+            dialog.cancel();
+        });
+        builder.setNeutralButton("Cancel",(DialogInterface.OnClickListener)(dialog, which) ->{
+            dialog.cancel();
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+
+    }
+
+}
