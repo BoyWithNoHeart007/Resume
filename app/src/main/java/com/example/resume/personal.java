@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class personal extends AppCompatActivity {
+public class personal extends BaseActivity {
 
     String name, email, phon, address;
     EditText edtname, edtemail, edtphon, edtaddress;
@@ -50,35 +50,11 @@ public class personal extends AppCompatActivity {
                 email = edtemail.getText().toString();
                 phon = edtphon.getText().toString();
 
-                Intent intent = new Intent();
-                intent.putExtra("name",name);
-                intent.putExtra("address",address);
-                intent.putExtra("email",email);
-                intent.putExtra("phon",phon);
+                Intent intent = new Intent(personal.this,education.class);
+                finish();
+                startActivity(intent);
             }
         });
     }
 
-
-    public void onBackPressed() {
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(personal.this);
-        builder.setMessage("Do you want to exit back in home page?");
-        builder.setTitle("Alert !");
-        builder.setCancelable(false);
-        AlertDialog.Builder builder1 = builder.setPositiveButton("Yes", (DialogInterface.OnClickListener) (dialog, which) -> {
-            Toast.makeText(personal.this, "yes clicked", Toast.LENGTH_SHORT).show();
-            finish();
-        });
-        builder.setNegativeButton("No", (DialogInterface.OnClickListener) (dialog, which) -> {
-            Toast.makeText(personal.this, "No clicked", Toast.LENGTH_SHORT).show();
-            dialog.cancel();
-        });
-        builder.setNeutralButton("cancel", (DialogInterface.OnClickListener) (dialog, which) -> {
-            Toast.makeText(personal.this, "Cancel clicked", Toast.LENGTH_SHORT).show();
-            dialog.cancel();
-        });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-    }
 }

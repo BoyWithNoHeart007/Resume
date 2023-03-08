@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".experience">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/edcompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#99000000"
+            android:hint="Company name"
+            android:background="@drawable/designtextview"/>
+
+        <EditText
+            android:id="@+id/edjob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#99000000"
+            android:hint="Job Title"
+            android:background="@drawable/designtextview"/>
+
+        <EditText
+            android:id="@+id/eddescription"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#99000000"
+            android:hint="Desciription"
+            android:gravity="top"
+            android:background="@drawable/designtextview"/>
+
+        <EditText
+            android:id="@+id/edyear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#99000000"
+            android:background="@drawable/designtextview"
+            android:padding="10dp"
+            android:hint="Experience Years / Months"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/designtextview"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="Reset"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/designtextview"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:text="next"/>
+
+    </LinearLayout>
+
+</LinearLayout>

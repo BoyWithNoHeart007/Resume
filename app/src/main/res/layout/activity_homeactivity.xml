@@ -6,38 +6,39 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#6FBADC"
+    android:background="@drawable/img"
     tools:context=".homeactivity">
 
 
     <Button
         android:id="@+id/create"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        android:layout_weight="1"
+        android:gravity="center"
         android:text="create"
         android:textSize="30dp"
-        android:backgroundTint="#E8653B"/>
+        android:padding="10dp"
+        android:background="@drawable/designtextview"/>
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_weight="1"
         android:text="RESUME MAKEr"
         android:textSize="30dp"
-        android:backgroundTint="@color/white"/>
+        android:padding="10dp"
+        android:background="@drawable/designtextview"/>
 
     <Button
         android:id="@+id/exit"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        android:layout_weight="1"
         android:textSize="30dp"
         android:text="exit"
-        android:backgroundTint="#165E19"/>
+        android:padding="10dp"
+        android:background="@drawable/designtextview"/>
 
 </LinearLayout>
