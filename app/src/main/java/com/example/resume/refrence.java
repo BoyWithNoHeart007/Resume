@@ -8,31 +8,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class skill extends AppCompatActivity {
+public class refrence extends BaseActivity {
 
+    EditText comname,comlink;
+    String coname,colink;
     Button reset,next;
-    EditText skill1,skill2,skill3,skill4;
-    String skil1,skil2,skil3,skil4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_skill);
+        setContentView(R.layout.activity_refrence);
 
-        skill1 = findViewById(R.id.skill1);
-        skill2 = findViewById(R.id.skill2);
-        skill3 = findViewById(R.id.skill3);
-        skill4 = findViewById(R.id.skill4);
+        comname = findViewById(R.id.comname);
+        comlink = findViewById(R.id.comlink);
         reset = findViewById(R.id.reset);
         next = findViewById(R.id.next);
 
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                skill1.setText("");
-                skill2.setText("");
-                skill3.setText("");
-                skill4.setText("");
+
+                comname.setText("");
+                comlink.setText("");
             }
         });
 
@@ -40,16 +37,14 @@ public class skill extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                skil1 = skill1.getText().toString();
-                skil2 = skill2.getText().toString();
-                skil3 = skill3.getText().toString();
-                skil4 = skill4.getText().toString();
+                coname = comname.getText().toString();
+                colink = comlink.getText().toString();
 
-                Intent intent = new Intent(skill.this,workprofile.class);
+
+                Intent intent = new Intent(refrence.this,template.class);
                 finish();
                 startActivity(intent);
             }
         });
-
     }
 }

@@ -4,67 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/img"
+    android:orientation="vertical"
     tools:context=".experience">
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="5dp">
+        android:layout_margin="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Experience"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.2"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/edcompanyName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="@drawable/designtextview"
+            android:hint="Company name"
             android:padding="10dp"
             android:textColor="@color/black"
-            android:textColorHint="#99000000"
-            android:hint="Company name"
-            android:background="@drawable/designtextview"/>
+            android:textColorHint="#99000000" />
 
         <EditText
             android:id="@+id/edjob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="@drawable/designtextview"
+            android:hint="Job Title"
             android:padding="10dp"
             android:textColor="@color/black"
-            android:textColorHint="#99000000"
-            android:hint="Job Title"
-            android:background="@drawable/designtextview"/>
+            android:textColorHint="#99000000" />
 
         <EditText
             android:id="@+id/eddescription"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_margin="5dp"
+            android:background="@drawable/designtextview"
+            android:gravity="top"
+            android:hint="Desciription"
             android:padding="10dp"
             android:textColor="@color/black"
-            android:textColorHint="#99000000"
-            android:hint="Desciription"
-            android:gravity="top"
-            android:background="@drawable/designtextview"/>
+            android:textColorHint="#99000000" />
 
         <EditText
             android:id="@+id/edyear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:textColor="@color/black"
-            android:textColorHint="#99000000"
             android:background="@drawable/designtextview"
+            android:hint="Experience Years / Months"
             android:padding="10dp"
-            android:hint="Experience Years / Months"/>
-
-
+            android:textColor="@color/black"
+            android:textColorHint="#99000000" />
 
 
     </LinearLayout>
@@ -78,21 +89,21 @@
             android:id="@+id/reset"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/designtextview"
-            android:textStyle="bold"
-            android:layout_margin="5dp"
-            android:text="Reset"/>
+            android:text="Reset"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/next"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="2"
             android:background="@drawable/designtextview"
-            android:textStyle="bold"
-            android:layout_margin="5dp"
-            android:text="next"/>
+            android:text="next"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

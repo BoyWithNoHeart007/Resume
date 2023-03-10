@@ -14,6 +14,7 @@
         android:layout_gravity="center"
         android:paddingTop="10dp"
         android:text="Education Details"
+        android:letterSpacing="0.2"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="20dp"/>
