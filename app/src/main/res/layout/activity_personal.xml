@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/img"
-    tools:context=".personal">
+    tools:context=".PersonalActivity">
 
 
     <TextView
@@ -89,7 +89,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"/>
+
     <TextView
+        android:id="@+id/texHobby"
         android:layout_width="250dp"
         android:layout_height="30dp"
         android:layout_gravity="center"
@@ -109,6 +111,7 @@
         android:gravity="center">
 
         <CheckBox
+            android:id="@+id/Coding"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
@@ -118,6 +121,7 @@
             android:paddingRight="10dp"
             android:background="@drawable/designtextview"/>
         <CheckBox
+            android:id="@+id/Hacking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
@@ -135,6 +139,7 @@
             android:gravity="center">
 
         <CheckBox
+            android:id="@+id/Gaming"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
@@ -144,6 +149,7 @@
             android:paddingRight="10dp"
             android:background="@drawable/designtextview"/>
         <CheckBox
+            android:id="@+id/Reading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"

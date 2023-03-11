@@ -27,7 +27,7 @@
         android:layout_margin="10dp">
 
         <EditText
-            android:id="@+id/edcourse1"
+            android:id="@+id/course"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Course/Degree"
@@ -41,7 +41,7 @@
             android:background="@drawable/designtextview"/>
 
     <EditText
-            android:id="@+id/edschool1"
+            android:id="@+id/school"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="School/Univercity"
@@ -55,7 +55,7 @@
             android:background="@drawable/designtextview"/>
 
         <EditText
-            android:id="@+id/edgrade1"
+            android:id="@+id/grade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Grade/Scrore"
@@ -70,7 +70,7 @@
             android:inputType="numberDecimal"/>
 
         <EditText
-            android:id="@+id/edyear1"
+            android:id="@+id/year"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Year"
@@ -86,137 +86,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="10dp">
-
-        <EditText
-            android:id="@+id/edcourse2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Course/Degree"
-            android:gravity="clip_horizontal"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:padding="10dp"
-            android:layout_margin="3dp"
-            android:textColorHint="#99000000"
-            android:textColor="@color/black"
-            android:background="@drawable/designtextview"/>
-
-        <EditText
-            android:id="@+id/edschool2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="School/Univercity"
-            android:gravity="clip_horizontal"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:padding="10dp"
-            android:layout_margin="3dp"
-            android:textColorHint="#99000000"
-            android:textColor="@color/black"
-            android:background="@drawable/designtextview"/>
-
-        <EditText
-            android:id="@+id/edgrade2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Grade/Scrore"
-            android:gravity="clip_horizontal"
-            android:textSize="16dp"
-            android:background="@drawable/designtextview"
-            android:padding="10dp"
-            android:layout_margin="3dp"
-            android:textStyle="bold"
-            android:textColorHint="#99000000"
-            android:textColor="@color/black"
-            android:inputType="numberDecimal"/>
-
-        <EditText
-            android:id="@+id/edyear2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Year"
-            android:gravity="clip_horizontal"
-            android:textSize="16dp"
-            android:background="@drawable/designtextview"
-            android:padding="10dp"
-            android:layout_margin="3dp"
-            android:textStyle="bold"
-            android:textColorHint="#99000000"
-            android:textColor="@color/black"
-            android:inputType="number"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="10dp">
-
-        <EditText
-            android:id="@+id/edcourse3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Course/Degree"
-            android:gravity="clip_horizontal"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:padding="10dp"
-            android:textColorHint="#99000000"
-            android:textColor="@color/black"
-            android:layout_margin="3dp"
-            android:background="@drawable/designtextview"/>
-
-        <EditText
-            android:id="@+id/edschool3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="School/Univercity"
-            android:gravity="clip_horizontal"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:padding="10dp"
-            android:textColorHint="#99000000"
-            android:textColor="@color/black"
-            android:layout_margin="3dp"
-            android:background="@drawable/designtextview"/>
-
-        <EditText
-            android:id="@+id/edgrade3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Grade/Scrore"
-            android:gravity="clip_horizontal"
-            android:textSize="16dp"
-            android:background="@drawable/designtextview"
-            android:padding="10dp"
-            android:textColorHint="#99000000"
-            android:textColor="@color/black"
-            android:layout_margin="3dp"
-            android:textStyle="bold"
-            android:inputType="numberDecimal"/>
-
-        <EditText
-            android:id="@+id/edyear3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Year"
-            android:textColorHint="#99000000"
-            android:gravity="clip_horizontal"
-            android:textSize="16dp"
-            android:background="@drawable/designtextview"
-            android:padding="10dp"
-            android:layout_margin="3dp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:inputType="number"/>
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
