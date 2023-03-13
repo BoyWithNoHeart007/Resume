@@ -1,14 +1,9 @@
 package com.example.resume;
 
 import android.content.DialogInterface;
-import android.os.Bundle;
-import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.resume.homeactivity;
 
 public class BaseActivity extends AppCompatActivity {
 

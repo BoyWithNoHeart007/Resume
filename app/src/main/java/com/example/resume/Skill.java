@@ -1,7 +1,5 @@
 package com.example.resume;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class skill extends BaseActivity {
+public class Skill extends BaseActivity {
 
     Button reset,next;
     EditText skill1,skill2,skill3,skill4;
@@ -57,7 +55,7 @@ public class skill extends BaseActivity {
                 editor.putString("skill4",skil4);
                 editor.commit();
 
-                Intent intent = new Intent(skill.this,workprofile.class);
+                Intent intent = new Intent(Skill.this, Workprofile.class);
                 finish();
                 startActivity(intent);
             }

@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.example.resume.databinding.ActivityHomeactivityBinding;
 
-public class homeactivity extends BaseActivity {
+public class Homeactivity extends BaseActivity {
 
         ActivityHomeactivityBinding binding;
 
@@ -22,7 +22,7 @@ public class homeactivity extends BaseActivity {
             public void onClick(View view) {
 
                 finish();
-                Intent intent = new Intent(homeactivity.this, PersonalActivity.class);
+                Intent intent = new Intent(Homeactivity.this, PersonalActivity.class);
                 startActivity(intent);
 
 

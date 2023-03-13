@@ -4,7 +4,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class t1 extends BaseActivity {
+public class T1 extends BaseActivity {
 
     SharedPreferences preferences;
     TextView txtName,tvaddress,tvemail,tvphone,tvhobby,tvschool,tvcourse,tvgrade,tvyear,tvCompany,tvjob,tvDesciription,tvJobyear,tvskill1,tvskill2,tvskill3,tvskill4,tvgithub,tvlinkedin,tvobjective,tvcompanyname,tvcompanylink;

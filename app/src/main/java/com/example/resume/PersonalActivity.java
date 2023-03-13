@@ -89,7 +89,7 @@ public class PersonalActivity extends BaseActivity {
                 editor.putString("hobby",Hobby);
                 editor.commit();
 
-                Intent intent = new Intent(PersonalActivity.this,education.class);
+                Intent intent = new Intent(PersonalActivity.this, Education.class);
                 finish();
                 startActivity(intent);
             }

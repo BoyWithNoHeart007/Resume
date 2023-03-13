@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import java.util.Objects;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
 
                 finish();
-                startActivity(new Intent(MainActivity.this,homeactivity.class));
+                startActivity(new Intent(MainActivity.this, Homeactivity.class));
 
             }
         },1000);

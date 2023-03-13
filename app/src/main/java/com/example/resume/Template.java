@@ -1,13 +1,11 @@
 package com.example.resume;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class template extends BaseActivity {
+public class Template extends BaseActivity {
 
     ImageView temp1;
 
@@ -21,7 +19,7 @@ public class template extends BaseActivity {
         temp1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(template.this,t1.class);
+                Intent intent = new Intent(Template.this, T1.class);
                 finish();
                 startActivity(intent);
             }

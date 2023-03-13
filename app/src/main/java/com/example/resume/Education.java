@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class education extends BaseActivity {
+public class Education extends BaseActivity {
 
     EditText course,school,grade,year;
     Button reset,next;
@@ -51,7 +51,7 @@ public class education extends BaseActivity {
             editor.putString("year",Year);
             editor.commit();
 
-            Intent intent = new Intent(education.this,experience.class);
+            Intent intent = new Intent(Education.this, Experience.class);
             finish();
             startActivity(intent);
 

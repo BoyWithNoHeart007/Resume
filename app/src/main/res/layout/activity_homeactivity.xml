@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/img"
-    tools:context=".homeactivity">
+    tools:context=".Homeactivity">
 
 
     <Button

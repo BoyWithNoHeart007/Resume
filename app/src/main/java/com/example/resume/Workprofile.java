@@ -1,7 +1,5 @@
 package com.example.resume;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class workprofile extends BaseActivity {
+public class Workprofile extends BaseActivity {
 
     String git,link;
     EditText github,Linkedin;
@@ -53,7 +51,7 @@ public class workprofile extends BaseActivity {
                 editor.putString("link",link);
                 editor.commit();
 
-                Intent intent = new Intent(workprofile.this,objective.class);
+                Intent intent = new Intent(Workprofile.this, Objective.class);
                 finish();
                 startActivity(intent);
             }
