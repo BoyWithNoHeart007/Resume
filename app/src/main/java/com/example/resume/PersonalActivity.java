@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -13,7 +14,8 @@ public class PersonalActivity extends BaseActivity {
 
     String name, email, phon, address;
     TextView texHobby;
-    EditText edtname, edtemail, edtphon, edtaddress,Coding,Hacking,Gaming,Reading;
+    EditText edtname, edtemail, edtphon, edtaddress;
+    CheckBox Coding,Hacking,Gaming,Reading;
     Button reset, next;
 
     SharedPreferences preferences;
@@ -59,21 +61,23 @@ public class PersonalActivity extends BaseActivity {
                 name = edtname.getText().toString();
                 address = edtaddress.getText().toString();
                 email = edtemail.getText().toString();
+
+
                 phon = edtphon.getText().toString();
 
                 String Hobby= "";
 
-                if(Coding.isClickable()){
-                    Hobby += "Coding/n";
+                if(Coding.isChecked()){
+                    Hobby += "Coding\n";
                 }
-                if(Hacking.isClickable()){
-                    Hobby += "Hacking/n";
+                if(Hacking.isChecked()){
+                    Hobby += "Hacking\n";
                 }
-                if(Gaming.isClickable()){
-                    Hobby += "Gaming/n";
+                if(Gaming.isChecked()){
+                    Hobby += "Gaming\n";
                 }
-                if(Reading.isClickable()){
-                    Hobby += "Reading/n";
+                if(Reading.isChecked()){
+                    Hobby += "Reading\n";
                 }
 
                 texHobby.setText(""+Hobby);

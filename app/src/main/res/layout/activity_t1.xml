@@ -13,13 +13,14 @@
         android:background="#AF4929"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/profile_image"
-            android:layout_width="69dp"
-            android:layout_height="100dp"
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/img_2" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_2"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
 
         <Space
             android:layout_width="match_parent"
@@ -291,7 +292,7 @@
 
 
         <TextView
-            android:id="tvCompany"
+            android:id="@+id/tvCompany"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -303,7 +304,7 @@
             android:textSize="12dp" />
 
         <TextView
-            android:id="tvjob"
+            android:id="@+id/tvjob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -315,7 +316,7 @@
             android:textSize="12dp" />
 
         <TextView
-            android:id="tvDesciription"
+            android:id="@+id/tvDesciription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -327,7 +328,7 @@
             android:textSize="12dp" />
 
         <TextView
-            android:id="tvJobyear"
+            android:id="@+id/tvJobyear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

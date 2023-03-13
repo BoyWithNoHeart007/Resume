@@ -3,6 +3,7 @@ package com.example.resume;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,10 +15,16 @@ public class refrence extends BaseActivity {
     String coname,colink;
     Button reset,next;
 
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_refrence);
+
+        preferences = getSharedPreferences("Date",0);
+        editor = preferences.edit();
 
         comname = findViewById(R.id.comname);
         comlink = findViewById(R.id.comlink);
@@ -39,6 +46,10 @@ public class refrence extends BaseActivity {
 
                 coname = comname.getText().toString();
                 colink = comlink.getText().toString();
+
+                editor.putString("coname",coname);
+                editor.putString("colink",colink);
+                editor.commit();
 
 
                 Intent intent = new Intent(refrence.this,template.class);

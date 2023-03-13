@@ -3,6 +3,7 @@ package com.example.resume;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,11 +14,16 @@ public class skill extends AppCompatActivity {
     Button reset,next;
     EditText skill1,skill2,skill3,skill4;
     String skil1,skil2,skil3,skil4;
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_skill);
+
+        preferences = getSharedPreferences("Date",0);
+        editor = preferences.edit();
 
         skill1 = findViewById(R.id.skill1);
         skill2 = findViewById(R.id.skill2);
@@ -44,6 +50,12 @@ public class skill extends AppCompatActivity {
                 skil2 = skill2.getText().toString();
                 skil3 = skill3.getText().toString();
                 skil4 = skill4.getText().toString();
+
+                editor.putString("skill1",skil1);
+                editor.putString("skill2",skil2);
+                editor.putString("skill3",skil3);
+                editor.putString("skill4",skil4);
+                editor.commit();
 
                 Intent intent = new Intent(skill.this,workprofile.class);
                 finish();
