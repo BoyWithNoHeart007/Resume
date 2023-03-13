@@ -28,7 +28,7 @@
         <EditText
             android:id="@+id/edtname"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="48dp"
             android:hint="Name"
             android:layout_margin="10dp"
             android:textStyle="bold"
@@ -56,7 +56,7 @@
         <EditText
             android:id="@+id/edtemail"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="48dp"
             android:hint="Mail"
             android:layout_margin="10dp"
             android:textStyle="bold"
@@ -69,7 +69,7 @@
         <EditText
             android:id="@+id/edtphon"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="48dp"
             android:hint="Phone No."
             android:layout_margin="10dp"
             android:textStyle="bold"
@@ -85,15 +85,10 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
-
     <TextView
         android:id="@+id/texHobby"
         android:layout_width="250dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_gravity="center"
         android:text="Hobby"
         android:textStyle="bold"
@@ -113,21 +108,21 @@
         <CheckBox
             android:id="@+id/Coding"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textStyle="bold"
             android:text="Coding"
-            android:layout_margin="20dp"
+            android:layout_margin="18dp"
             android:textColor="@color/black"
             android:paddingRight="10dp"
             android:background="@drawable/designtextview"/>
         <CheckBox
             android:id="@+id/Hacking"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textStyle="bold"
             android:text="Hacking"
             android:textColor="@color/black"
-            android:layout_margin="20dp"
+            android:layout_margin="18dp"
             android:paddingRight="10dp"
             android:background="@drawable/designtextview"/>
 
@@ -141,20 +136,20 @@
         <CheckBox
             android:id="@+id/Gaming"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textStyle="bold"
             android:text="Gaming"
-            android:layout_margin="20dp"
+            android:layout_margin="18dp"
             android:textColor="@color/black"
             android:paddingRight="10dp"
             android:background="@drawable/designtextview"/>
         <CheckBox
             android:id="@+id/Reading"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:textStyle="bold"
             android:text="Reading"
-            android:layout_margin="20dp"
+            android:layout_margin="18dp"
             android:paddingRight="10dp"
             android:textColor="@color/black"
             android:background="@drawable/designtextview"/>

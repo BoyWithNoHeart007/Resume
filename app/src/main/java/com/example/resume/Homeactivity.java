@@ -17,25 +17,16 @@ public class Homeactivity extends BaseActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.create.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        binding.create.setOnClickListener(view1 -> {
 
-                finish();
-                Intent intent = new Intent(Homeactivity.this, PersonalActivity.class);
-                startActivity(intent);
+            finish();
+            Intent intent = new Intent(Homeactivity.this, PersonalActivity.class);
+            startActivity(intent);
 
 
-            }
         });
 
-        binding.exit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                finish();
-            }
-        });
+        binding.exit.setOnClickListener(view12 -> finish());
     }
 
 }

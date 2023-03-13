@@ -3,7 +3,6 @@ package com.example.resume;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -26,27 +25,27 @@ public class Objective extends BaseActivity {
         preferences = getSharedPreferences("Data",0);
         editor = preferences.edit();
 
-        reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        reset.setOnClickListener(view -> objective.setText(""));
 
-                objective.setText("");
+        next.setOnClickListener(view -> {
+
+            obj = objective.getText().toString();
+
+            if(obj.isEmpty()){
+                objective.setError("Enter Objective!");
+            }else{
+                intent();
+
             }
+            editor.putString("obj",obj);
+            editor.commit();
+
         });
+    }
 
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                obj = objective.getText().toString();
-
-                editor.putString("obj",obj);
-                editor.commit();
-
-                Intent intent = new Intent(Objective.this, Refrence.class);
-                finish();
-                startActivity(intent);
-            }
-        });
+    private void intent(){
+        Intent intent = new Intent(Objective.this, Refrence.class);
+        finish();
+        startActivity(intent);
     }
 }

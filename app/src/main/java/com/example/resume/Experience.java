@@ -3,7 +3,6 @@ package com.example.resume;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -31,34 +30,42 @@ public class Experience extends BaseActivity {
         reset = findViewById(R.id.reset);
         next = findViewById(R.id.next);
 
-        reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                edcompanyName.setText("");
-                edjob.setText("");
-                eddescription.setText("");
-                edyear.setText("");
-            }
+        reset.setOnClickListener(view -> {
+            edcompanyName.setText("");
+            edjob.setText("");
+            eddescription.setText("");
+            edyear.setText("");
         });
 
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                company_name = edcompanyName.getText().toString();
-                job = edjob.getText().toString();
-                description = eddescription.getText().toString();
-                year = edyear.getText().toString();
+        next.setOnClickListener(view -> {
+            company_name = edcompanyName.getText().toString();
+            job = edjob.getText().toString();
+            description = eddescription.getText().toString();
+            year = edyear.getText().toString();
 
-                editor.putString("cname",company_name);
-                editor.putString("job",job);
-                editor.putString("desc",description);
-                editor.putString("yeare",year);
-                editor.commit();
-
-                Intent intent = new Intent(Experience.this, Skill.class);
-                finish();
-                startActivity(intent);
+            if(company_name.isEmpty()){
+                edcompanyName.setError("Enter Company name!");
+            } else if (job.isEmpty()) {
+                edjob.setError("Enter job");
+            } else if (description.isEmpty()) {
+                eddescription.setError("Enter Description");
+            } else if (year.isEmpty()) {
+                edyear.setError("Enter year");
+            }else {
+                intent();
             }
+
+            editor.putString("cname",company_name);
+            editor.putString("job",job);
+            editor.putString("desc",description);
+            editor.putString("yeare",year);
+            editor.commit();
+
         });
+    }
+    private void intent(){
+        Intent intent = new Intent(Experience.this, Skill.class);
+        finish();
+        startActivity(intent);
     }
 }

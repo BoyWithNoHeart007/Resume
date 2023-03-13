@@ -35,7 +35,7 @@
         <EditText
             android:id="@+id/edcompanyName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_margin="5dp"
             android:background="@drawable/designtextview"
             android:hint="Company name"
@@ -46,7 +46,7 @@
         <EditText
             android:id="@+id/edjob"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_margin="5dp"
             android:background="@drawable/designtextview"
             android:hint="Job Title"
@@ -69,7 +69,7 @@
         <EditText
             android:id="@+id/edyear"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_margin="5dp"
             android:background="@drawable/designtextview"
             android:hint="Experience Years / Months"

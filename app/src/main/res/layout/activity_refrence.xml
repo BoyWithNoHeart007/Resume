@@ -28,7 +28,7 @@
     <EditText
         android:id="@+id/comname"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_margin="10dp"
         android:background="@drawable/designtextview"
         android:hint="Company Name"
@@ -41,7 +41,7 @@
     <EditText
         android:id="@+id/comlink"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_margin="10dp"
         android:background="@drawable/designtextview"
         android:hint="Company Link"

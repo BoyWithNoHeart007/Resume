@@ -45,16 +45,35 @@ public class Education extends BaseActivity {
             Grade = grade.getText().toString();
             Year = year.getText().toString();
 
+            if(Course.isEmpty()){
+                course.setError("Enter Course!");
+            } else if (School.isEmpty()) {
+                school.setError("Enter Course!");
+
+            } else if (Grade.isEmpty()) {
+                grade.setError("Enter Course!");
+
+            } else if (Year.isEmpty()) {
+                year.setError("Enter Year!");
+
+            } else {
+                intent();
+            }
+
+
             editor.putString("course",Course);
             editor.putString("school",School);
             editor.putString("grade",Grade);
             editor.putString("year",Year);
             editor.commit();
 
-            Intent intent = new Intent(Education.this, Experience.class);
-            finish();
-            startActivity(intent);
+
 
         });
     }
+        private void intent(){
+            Intent intent = new Intent(Education.this, Experience.class);
+            finish();
+            startActivity(intent);
+        }
 }

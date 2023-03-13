@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -31,32 +30,42 @@ public class Workprofile extends BaseActivity {
         reset = findViewById(R.id.reset);
         next = findViewById(R.id.next);
 
-        reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        reset.setOnClickListener(view -> {
 
-                github.setText("");
-                Linkedin.setText("");
-            }
+            github.setText("");
+            Linkedin.setText("");
         });
 
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        next.setOnClickListener(view -> {
 
-                git = github.getText().toString();
-                link = Linkedin.getText().toString();
+            git = github.getText().toString();
+            link = Linkedin.getText().toString();
 
-                editor.putString("git",git);
-                editor.putString("link",link);
-                editor.commit();
+            if(git.isEmpty()){
+                github.setError("Enter link");
+            } else if (link.isEmpty()) {
+                Linkedin.setError("Enter link");
+            } else if (!git.toLowerCase().contains(".com")) {
+                github.setError("Enter valid link!");
+            } else if (!link.toLowerCase().contains(".com")) {
+                Linkedin.setError("Enter valid link!");
 
-                Intent intent = new Intent(Workprofile.this, Objective.class);
-                finish();
-                startActivity(intent);
+            } else{
+                intent();
             }
+
+            editor.putString("git",git);
+            editor.putString("link",link);
+            editor.commit();
+
         });
 
+    }
+
+    private void intent(){
+        Intent intent = new Intent(Workprofile.this, Objective.class);
+        finish();
+        startActivity(intent);
     }
 
 }

@@ -36,7 +36,7 @@
     <EditText
         android:id="@+id/skill1"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:layout_margin="10dp"
         android:textColor="@color/black"
         android:textColorHint="#99000000"
@@ -48,7 +48,7 @@
     <EditText
         android:id="@+id/skill2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:layout_margin="10dp"
         android:textColor="@color/black"
         android:textColorHint="#99000000"
@@ -60,7 +60,7 @@
     <EditText
         android:id="@+id/skill3"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:layout_margin="10dp"
         android:textColor="@color/black"
         android:textColorHint="#99000000"
@@ -72,7 +72,7 @@
     <EditText
         android:id="@+id/skill4"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:layout_margin="10dp"
         android:textColor="@color/black"
         android:textColorHint="#99000000"

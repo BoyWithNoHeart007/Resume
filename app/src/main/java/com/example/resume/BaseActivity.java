@@ -1,7 +1,4 @@
 package com.example.resume;
-
-import android.content.DialogInterface;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,15 +13,9 @@ public class BaseActivity extends AppCompatActivity {
         builder.setTitle("Alert !");
         builder.setCancelable(false);
 
-        AlertDialog.Builder builder1 = builder.setPositiveButton("Yes",(DialogInterface.OnClickListener) (dialog, which) ->{
-            finish();
-        });
-        builder.setNegativeButton("NO",(DialogInterface.OnClickListener)(dialog, which) ->{
-            dialog.cancel();
-        });
-        builder.setNeutralButton("Cancel",(DialogInterface.OnClickListener)(dialog, which) ->{
-            dialog.cancel();
-        });
+        AlertDialog.Builder builder1 = builder.setPositiveButton("Yes", (dialog, which) -> finish());
+        builder.setNegativeButton("NO", (dialog, which) -> dialog.cancel());
+        builder.setNeutralButton("Cancel", (dialog, which) -> dialog.cancel());
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
 
