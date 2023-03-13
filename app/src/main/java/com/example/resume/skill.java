@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class skill extends AppCompatActivity {
+public class skill extends BaseActivity {
 
     Button reset,next;
     EditText skill1,skill2,skill3,skill4;
@@ -22,7 +22,7 @@ public class skill extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_skill);
 
-        preferences = getSharedPreferences("Date",0);
+        preferences = getSharedPreferences("Data",0);
         editor = preferences.edit();
 
         skill1 = findViewById(R.id.skill1);

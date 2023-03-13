@@ -25,7 +25,7 @@ public class workprofile extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workprofile);
 
-        preferences = getSharedPreferences("Date",0);
+        preferences = getSharedPreferences("Data",0);
         editor = preferences.edit();
 
         github = findViewById(R.id.github);

@@ -12,12 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:paddingTop="10dp"
         android:text="Education Details"
         android:letterSpacing="0.2"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:textSize="20dp"/>
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"/>
 
 
     <LinearLayout

@@ -8,9 +8,17 @@
     android:orientation="vertical"
     tools:context=".objective">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"/>
+        android:layout_height="wrap_content"
+        android:text="Objective"
+        android:layout_margin="50dp"
+        android:letterSpacing="0.2"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
 
     <EditText
         android:id="@+id/objective"

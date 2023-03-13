@@ -22,7 +22,7 @@ public class education extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_education);
 
-        preferences = getSharedPreferences("Date",0);
+        preferences = getSharedPreferences("Data",0);
         editor = preferences.edit();
 
         course = findViewById(R.id.course);

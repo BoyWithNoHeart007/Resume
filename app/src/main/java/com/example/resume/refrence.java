@@ -23,7 +23,7 @@ public class refrence extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_refrence);
 
-        preferences = getSharedPreferences("Date",0);
+        preferences = getSharedPreferences("Data",0);
         editor = preferences.edit();
 
         comname = findViewById(R.id.comname);
